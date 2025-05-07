@@ -73,7 +73,7 @@ const Features = () => {
                         )}
                         <button
                             onClick={() => setShowMore1(!showMore1)}
-                            className="text-blue-600 font-semibold mt-2 hover:underline"
+                            className="text-red-600 font-semibold mt-2 hover:underline"
                         >
                             {showMore1 ? "Read less" : "Read more"}
                         </button>
@@ -101,7 +101,7 @@ const Features = () => {
                         )}
                         <button
                             onClick={() => setShowMore2(!showMore2)}
-                            className="text-blue-600 font-semibold mt-2 hover:underline"
+                            className="text-red-600 font-semibold mt-2 hover:underline"
                         >
                             {showMore2 ? "Read less" : "Read more"}
                         </button>
@@ -127,7 +127,7 @@ const Features = () => {
                 </div>
                 <div className="w-[800px] mt-8 md:mt-0 ml-20">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
-                        Create GST Bills for customers and share them online
+                        Send Payment Reminders to Recover Dues
                     </h2>
                     <div className="text-gray-600 text-lg space-y-4">
                         <p>Vyapar’s accounting and billing software assists small and medium-sized enterprises (SMEs)...</p>
@@ -139,11 +139,45 @@ const Features = () => {
                         )}
                         <button
                             onClick={() => setShowMore3(!showMore3)}
-                            className="text-blue-600 font-semibold mt-2 hover:underline"
+                            className="text-red-600 font-semibold mt-2 hover:underline"
                         >
                             {showMore3 ? "Read less" : "Read more"}
                         </button>
                     </div>
+                </div>
+            </section>
+            {/* Section 4 */}
+            <section className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-0 bg-white">
+                <div className="w-full md:w-[800px] md:pr-20">
+                    <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+                    GST filing made simpler and faster
+                    </h2>
+                    <div className="text-gray-600 text-lg space-y-4">
+                        <p>Vyapar brings the finest inventory management software with incredibly effective features...</p>
+                        {showMore2 && (
+                            <>
+                                <p>performance. Using the Vyapar app features like business reports...</p>
+                                <p>Tracking is accomplished through batch numbers, expiration dates...</p>
+                                <p>Using the free billing software by Vyapar, you can check the live status...</p>
+                                <p>Vyapar empowers your employees to take care of your inventory...</p>
+                                <p>Using the best billing app, you need not do tasks manually...</p>
+                                <p>Another benefit of using Vyapar software is that it gives you statistics...</p>
+                            </>
+                        )}
+                        <button
+                            onClick={() => setShowMore2(!showMore2)}
+                            className="text-red-600 font-semibold mt-2 hover:underline"
+                        >
+                            {showMore2 ? "Read less" : "Read more"}
+                        </button>
+                    </div>
+                </div>
+                <div className="w-full md:w-[600px] flex justify-center md:justify-end mt-8 md:mt-0">
+                    <img
+                        src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/gst_filing_made_simplerAndFaster.webp"
+                        alt="Manage Inventory"
+                        className="w-full max-w-md"
+                    />
                 </div>
             </section>
         </section>
