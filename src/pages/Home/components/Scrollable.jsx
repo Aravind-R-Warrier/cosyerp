@@ -66,35 +66,132 @@ export default function Scrollable() {
     const [selectedId, setSelectedId] = useState(1);
 
     return (
-        <div className="flex flex-col justify-center md:flex-row px-6 md:px-20 py-12 bg-white gap-6">
-            {/* Left Side - Scrollable Feature List */}
-            <div className="w-full md:w-1/3 max-h-[600px] overflow-y-auto space-y-4 ">
-                {features.map((feature) => (
-                    <div
-                        key={feature.id}
-                        onClick={() => setSelectedId(feature.id)}
-                        className={`flex items-center p-10 border rounded-lg cursor-pointer transition shadow-sm ${selectedId === feature.id
-                            ? "bg-blue-100 border-blue-500"
-                            : "bg-white hover:bg-gray-50"
-                            }`}
-                    >
-                        <img src={feature.image} alt="icon" className="w-10 h-10 mr-4" />
-                        <span className="text-2xl font-bold text-gray-800">
-                            {feature.title}
-                        </span>
-                    </div>
-                ))}
+        <>
+            <div className="flex flex-col justify-center md:flex-row px-6 md:px-20 py-12 bg-white gap-6">
+                {/* Left Side - Scrollable Feature List */}
+                <div className="w-full md:w-1/3 max-h-[600px] overflow-y-auto space-y-4 ">
+                    {features.map((feature) => (
+                        <div
+                            key={feature.id}
+                            onClick={() => setSelectedId(feature.id)}
+                            className={`flex items-center p-10 border rounded-lg cursor-pointer transition shadow-sm ${selectedId === feature.id
+                                ? "bg-blue-100 border-blue-500"
+                                : "bg-white hover:bg-gray-50"
+                                }`}
+                        >
+                            <img src={feature.image} alt="icon" className="w-10 h-10 mr-4" />
+                            <span className="text-2xl font-bold text-gray-800">
+                                {feature.title}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Right Side - Feature Content */}
+                <div className="w-full md:w-[800px] p-10  bg-gray-50">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                        {features.find((f) => f.id === selectedId).title}
+                    </h2>
+                    <p className="text-gray-700 text-[18px] font-medium leading-relaxed text-justify">
+                        {features.find((f) => f.id === selectedId).content}
+                    </p>
+                </div>
             </div>
 
-            {/* Right Side - Feature Content */}
-            <div className="w-full md:w-[800px] p-10  bg-gray-50">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    {features.find((f) => f.id === selectedId).title}
-                </h2>
-                <p className="text-gray-700 text-[18px] font-medium leading-relaxed text-justify">
-                    {features.find((f) => f.id === selectedId).content}
-                </p>
-            </div>
-        </div>
+
+            {/* new section */}
+
+            <section className="px-4 md:px-40 py-16 bg-white">
+                <h1 className="text-center text-5xl font-bold text-gray-600 p-2 mb-10">Benefits of GST Billing Software</h1>
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+                    {/* Left Column */}
+                    <div className="flex flex-col gap-12 w-full lg:w-1/3">
+                        {/* Card 1 */}
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <img src="https://img.favpng.com/14/10/5/bullet-google-docs-clip-art-png-favpng-0sW0QEHfCfhtKTwJxdpAdQQ2h.jpg" alt="icon" className="w-5 h-5" />
+                                <h3 className="font-bold text-2xl text-gray-800">Track your business status</h3>
+                            </div>
+                            <p className="mt-2 text-gray-600 text-xl leading-relaxed">
+                                Vyapar business dashboard makes the entire management process seamless. You can check business cash flow, inventory status, open orders, and payment updates in one place.
+                            </p>
+                            <p className="mt-1 text-red-500 text-sm font-semibold">+ Read more</p>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <img src="https://img.favpng.com/14/10/5/bullet-google-docs-clip-art-png-favpng-0sW0QEHfCfhtKTwJxdpAdQQ2h.jpg" alt="icon" className="w-5 h-5" />
+                                <h3 className="font-bold text-2xl text-gray-800">Manage cashflow seamlessly</h3>
+                            </div>
+                            <p className="mt-2 text-xl text-gray-600 text-sm leading-relaxed">
+                                GST billing & accounting software allows businesses to record transactions. It helps track payments. Over 1 crore businesses have tried out our free billing software features...
+                            </p>
+                            <p className="mt-1 text-red-500 text-sm font-semibold">+ Read more</p>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <img src="https://img.favpng.com/14/10/5/bullet-google-docs-clip-art-png-favpng-0sW0QEHfCfhtKTwJxdpAdQQ2h.jpg" alt="icon" className="w-5 h-5" />
+                                <h3 className="font-bold text-2xl text-gray-800">Online/Offline billing</h3>
+                            </div>
+                            <p className="mt-2 text-gray-600 text-xl leading-relaxed">
+                                Using our billing tool, you need not stop business operations due to weak internet connectivity. You can use the offline billing...
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Center Image */}
+                    <div className="w-full lg:w-1/3 flex justify-center">
+                        <img
+                            src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/benefits_of_gst_billing_and_invoicing_software.webp"
+                            alt="Vyapar App"
+                            className="w-[90%] max-w-sm md:max-w-md"
+                        />
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="flex flex-col gap-12 w-full lg:w-1/3">
+                        {/* Card 1 */}
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <img src="https://img.favpng.com/14/10/5/bullet-google-docs-clip-art-png-favpng-0sW0QEHfCfhtKTwJxdpAdQQ2h.jpg" alt="icon" className="w-5 h-5" />
+                                <h3 className="font-bold text-2xl text-gray-800">Keep data safe with backups</h3>
+                            </div>
+                            <p className="mt-2 text-gray-600 text-xl leading-relaxed">
+                                Using our free GST software for billing in India, you can set up an automatic data backup, allowing you to safeguard the data stored in the app...
+                            </p>
+                            <p className="mt-1 text-red-500 text-sm font-semibold">+ Read more</p>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <img src="https://img.favpng.com/14/10/5/bullet-google-docs-clip-art-png-favpng-0sW0QEHfCfhtKTwJxdpAdQQ2h.jpg" alt="icon" className="w-5 h-5" />
+                                <h3 className="font-bold text-2xl text-gray-800">Build a positive brand image</h3>
+                            </div>
+                            <p className="mt-2 text-gray-600 text-xl leading-relaxed">
+                                Providing professional quotes and estimates during negotiation builds a positive brand image. Further, you can provide complete disclosure...
+                            </p>
+                            <p className="mt-1 text-red-500 text-sm font-semibold">+ Read more</p>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <img src="https://img.favpng.com/14/10/5/bullet-google-docs-clip-art-png-favpng-0sW0QEHfCfhtKTwJxdpAdQQ2h.jpg" alt="icon" className="w-5 h-5" />
+                                <h3 className="font-bold text-2xl text-gray-800">Plan your inventory space</h3>
+                            </div>
+                            <p className="mt-2 text-gray-600 text-xl leading-relaxed">
+                                Using our GST billing software, you can keep track of available items in your store. It can help you set up low inventory alerts...
+                            </p>
+                            <p className="mt-1 text-red-500 text-sm font-semibold">+ Read more</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </>
     );
 }
