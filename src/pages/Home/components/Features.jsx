@@ -48,152 +48,147 @@ const Features = () => {
             </div>
 
             {/* Section 1 */}
-            <section className="flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-12 py-20 md:py-40 bg-white">
-                {/* Changed: added items-center for small screens, adjusted py from fixed 40 to responsive */}
+           {/* Section 1 */}
+<section className="flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-12 py-20 md:py-40 bg-white">
+    <div className="w-full flex justify-center md:justify-start mb-8 md:mb-0">
+        <img
+            src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/make_gst_bills_and_share_with_your_customers.webp"
+            alt="Vyapar GST Billing"
+            className="w-full max-w-[400px] md:max-w-[400px]"
+        />
+    </div>
 
-                <div className="w-full flex justify-center md:justify-start mb-8 md:mb-0">
-                    {/* Changed: added mb-8 for spacing on small screens */}
-                    <img
-                        src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/make_gst_bills_and_share_with_your_customers.webp"
-                        alt="Vyapar GST Billing"
-                        className="w-full max-w-[400px] md:max-w-[400px]"
-                    />
-                    {/* Changed: responsive width using w-full + max-w for both mobile and desktop */}
-                </div>
-
-                <div className="w-full md:w-[800px] md:ml-20 text-center md:text-left">
-                    {/* Changed: responsive width, margin-left only on md+, center text on small screens */}
-                    <h2 className="text-2xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
-                        {/* Changed: text-3xl to text-2xl for better mobile readability */}
-                        Create GST Bills for customers and share them online
-                    </h2>
-
-                    <div className="text-gray-600 text-base md:text-lg mx-auto md:mx-0 max-w-[500px] space-y-4">
-                        {/* Changed: added max-w and mx-auto to center on small screens */}
-                        <p>
-                            Vyapar billing software allows you to generate GST invoices for clients and share them digitally. This tool aids in establishing a
-                        </p>
-                        {showMore1 && (
-                            <>
-                                <p>professional brand image with its essential GST billing functionalities...</p>
-                                <p>You can utilize the Vyapar accounting and billing app to draft invoices...</p>
-                                <p>Using our user-friendly invoicing software to comply with GST norms...</p>
-                                <p>Unlike most accounting softwares, Vyapar enables you to create invoices...</p>
-                                <p>Vyapar is the free invoicing software. It comes with various useful...</p>
-                                <p>Numerous useful features are available in Windows desktop software...</p>
-                            </>
-                        )}
-                        <button
-                            onClick={() => setShowMore1(!showMore1)}
-                            className="text-red-600 font-semibold mt-2 hover:underline"
-                        >
-                            {showMore1 ? "Read less" : "Read more"}
-                        </button>
-                    </div>
-                </div>
-            </section>
+    <div className="w-full md:w-[800px] md:ml-20 text-center md:text-left">
+        <h2 className="text-2xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+            Create GST Bills for customers and share them online
+        </h2>
+        <div className="text-gray-600 text-base md:text-lg mx-auto md:mx-0 max-w-[500px] space-y-4">
+            <p>
+                Vyapar billing software allows you to generate GST invoices for clients and share them digitally. This tool aids in establishing a
+            </p>
+            {showMore1 && (
+                <>
+                    <p>professional brand image with its essential GST billing functionalities...</p>
+                    <p>You can utilize the Vyapar accounting and billing app to draft invoices...</p>
+                    <p>Using our user-friendly invoicing software to comply with GST norms...</p>
+                    <p>Unlike most accounting softwares, Vyapar enables you to create invoices...</p>
+                    <p>Vyapar is the free invoicing software. It comes with various useful...</p>
+                    <p>Numerous useful features are available in Windows desktop software...</p>
+                </>
+            )}
+            <button
+                onClick={() => setShowMore1(!showMore1)}
+                className="text-red-600 font-semibold mt-2 hover:underline"
+            >
+                {showMore1 ? "Read less" : "Read more"}
+            </button>
+        </div>
+    </div>
+</section>
 
 
-            {/* Section 2 */}
-            <section className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-0 bg-white">
-                <div className="w-full md:w-[800px] md:pr-20">
-                    <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
-                        Manage Inventory Seamlessly
-                    </h2>
-                    <div className="text-gray-600 text-lg space-y-4">
-                        <p>Vyapar brings the finest inventory management software with incredibly effective features...</p>
-                        {showMore2 && (
-                            <>
-                                <p>performance. Using the Vyapar app features like business reports...</p>
-                                <p>Tracking is accomplished through batch numbers, expiration dates...</p>
-                                <p>Using the free billing software by Vyapar, you can check the live status...</p>
-                                <p>Vyapar empowers your employees to take care of your inventory...</p>
-                                <p>Using the best billing app, you need not do tasks manually...</p>
-                                <p>Another benefit of using Vyapar software is that it gives you statistics...</p>
-                            </>
-                        )}
-                        <button
-                            onClick={() => setShowMore2(!showMore2)}
-                            className="text-red-600 font-semibold mt-2 hover:underline"
-                        >
-                            {showMore2 ? "Read less" : "Read more"}
-                        </button>
-                    </div>
-                </div>
-                <div className="w-full md:w-[600px] flex justify-center md:justify-end mt-8 md:mt-0">
-                    <img
-                        src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/check_inventory_instantly.webp"
-                        alt="Manage Inventory"
-                        className="w-full max-w-md"
-                    />
-                </div>
-            </section>
-
-            {/* Section 3 */}
-            <section className="flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-12 py-0 md:py-40 bg-white">
-                <div className="w-full flex justify-center md:justify-start mb-8 md:mb-0">
-                    <img
-                        src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/remind_to_recover_payments.webp"
-                        alt="Recover Payments"
-                        className="w-full max-w-[400px] md:max-w-[400px]"
-                    />
-                </div>
-
-                <div className="w-full md:w-[800px] md:ml-20 text-center md:text-left">
-                    <h2 className="text-2xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
-                        Send Payment Reminders to Recover Dues
-                    </h2>
-                    <div className="text-gray-600 text-base md:text-lg mx-auto md:mx-0 max-w-[500px] space-y-4">
-                        <p>Vyapar’s accounting and billing software assists small and medium-sized enterprises (SMEs)...</p>
-                        {showMore3 && (
-                            <>
-                                <p>Vyapar’s accounting and billing software assists SMEs in securing prompt payments...</p>
-                                <p>... and managing their cash flow effectively. The platform enables users to monitor all outstanding payments.</p>
-                            </>
-                        )}
-                        <button
-                            onClick={() => setShowMore3(!showMore3)}
-                            className="text-red-600 font-semibold mt-2 hover:underline"
-                        >
-                            {showMore3 ? "Read less" : "Read more"}
-                        </button>
-                    </div>
-                </div>
-            </section>
+{/* Section 2 - HIDDEN on small screens */}
+<section className="hidden md:flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-0 bg-white">
+    <div className="w-full md:w-[800px] md:pr-20">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+            Manage Inventory Seamlessly
+        </h2>
+        <div className="text-gray-600 text-lg space-y-4">
+            <p>Vyapar brings the finest inventory management software with incredibly effective features...</p>
+            {showMore2 && (
+                <>
+                    <p>performance. Using the Vyapar app features like business reports...</p>
+                    <p>Tracking is accomplished through batch numbers, expiration dates...</p>
+                    <p>Using the free billing software by Vyapar, you can check the live status...</p>
+                    <p>Vyapar empowers your employees to take care of your inventory...</p>
+                    <p>Using the best billing app, you need not do tasks manually...</p>
+                    <p>Another benefit of using Vyapar software is that it gives you statistics...</p>
+                </>
+            )}
+            <button
+                onClick={() => setShowMore2(!showMore2)}
+                className="text-red-600 font-semibold mt-2 hover:underline"
+            >
+                {showMore2 ? "Read less" : "Read more"}
+            </button>
+        </div>
+    </div>
+    <div className="w-full md:w-[600px] flex justify-center md:justify-end mt-8 md:mt-0">
+        <img
+            src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/check_inventory_instantly.webp"
+            alt="Manage Inventory"
+            className="w-full max-w-md"
+        />
+    </div>
+</section>
 
 
-            {/* Section 4 */}
-            <section className="flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-12 py-0 md:py-40 bg-white">
-                <div className="w-full md:w-[800px] md:pr-20 text-center md:text-left mb-8 md:mb-0">
-                    <h2 className="text-2xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
-                        GST filing made simpler and faster
-                    </h2>
-                    <div className="text-gray-600 text-base md:text-lg mx-auto md:mx-0 max-w-[500px] space-y-4">
-                        <p>Vyapar brings the finest inventory management software with incredibly effective features...</p>
-                        {showMore4 && (
-                            <>
-                                <p>performance. Using the Vyapar app features like business reports...</p>
-                                <p>Tracking is accomplished through batch numbers, expiration dates...</p>
-                                <p>Using the free billing software by Vyapar, you can check the live status...</p>
-                            </>
-                        )}
-                        <button
-                            onClick={() => setShowMore4(!showMore4)}
-                            className="text-red-600 font-semibold mt-2 hover:underline"
-                        >
-                            {showMore4 ? "Read less" : "Read more"}
-                        </button>
-                    </div>
-                </div>
+{/* Section 3 */}
+<section className="flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-12 py-0 md:py-40 bg-white">
+    <div className="w-full flex justify-center md:justify-start mb-8 md:mb-0">
+        <img
+            src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/remind_to_recover_payments.webp"
+            alt="Recover Payments"
+            className="w-full max-w-[400px] md:max-w-[400px]"
+        />
+    </div>
 
-                <div className="w-full md:w-[600px] flex justify-center md:justify-end">
-                    <img
-                        src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/gst_filing_made_simplerAndFaster.webp"
-                        alt="GST Filing"
-                        className="w-full max-w-[400px] md:max-w-[400px]"
-                    />
-                </div>
-            </section>
+    <div className="w-full md:w-[800px] md:ml-20 text-center md:text-left">
+        <h2 className="text-2xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+            Send Payment Reminders to Recover Dues
+        </h2>
+        <div className="text-gray-600 text-base md:text-lg mx-auto md:mx-0 max-w-[500px] space-y-4">
+            <p>Vyapar’s accounting and billing software assists small and medium-sized enterprises (SMEs)...</p>
+            {showMore3 && (
+                <>
+                    <p>Vyapar’s accounting and billing software assists SMEs in securing prompt payments...</p>
+                    <p>... and managing their cash flow effectively. The platform enables users to monitor all outstanding payments.</p>
+                </>
+            )}
+            <button
+                onClick={() => setShowMore3(!showMore3)}
+                className="text-red-600 font-semibold mt-2 hover:underline"
+            >
+                {showMore3 ? "Read less" : "Read more"}
+            </button>
+        </div>
+    </div>
+</section>
+
+
+{/* Section 4 - HIDDEN on small screens */}
+<section className="hidden md:flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-12 py-0 md:py-40 bg-white">
+    <div className="w-full md:w-[800px] md:pr-20 text-center md:text-left mb-8 md:mb-0">
+        <h2 className="text-2xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+            GST filing made simpler and faster
+        </h2>
+        <div className="text-gray-600 text-base md:text-lg mx-auto md:mx-0 max-w-[500px] space-y-4">
+            <p>Vyapar brings the finest inventory management software with incredibly effective features...</p>
+            {showMore4 && (
+                <>
+                    <p>performance. Using the Vyapar app features like business reports...</p>
+                    <p>Tracking is accomplished through batch numbers, expiration dates...</p>
+                    <p>Using the free billing software by Vyapar, you can check the live status...</p>
+                </>
+            )}
+            <button
+                onClick={() => setShowMore4(!showMore4)}
+                className="text-red-600 font-semibold mt-2 hover:underline"
+            >
+                {showMore4 ? "Read less" : "Read more"}
+            </button>
+        </div>
+    </div>
+
+    <div className="w-full md:w-[600px] flex justify-center md:justify-end">
+        <img
+            src="https://vyaparapp.in/v/z/wp-content/uploads/2024/05/gst_filing_made_simplerAndFaster.webp"
+            alt="GST Filing"
+            className="w-full max-w-[400px] md:max-w-[600px]"
+        />
+    </div>
+</section>
+
 
             
             
