@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Home from './pages/Home/Home'
 import Navbar from './utils/Navbar'
+import Footer from './utils/Footer'
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
     <Navbar/>
     <Home/>
+    <Footer/>
     </>
   )
 }
