@@ -62,7 +62,7 @@ const FaqComponent = () => {
                                 </span>
                             </button>
                             {openIndex === index && (
-                                <div className="px-6 py-8 text-xl text-gray-600 bg-red-100">
+                                <div className="px-6 py-8 transition text-xl text-gray-600 bg-red-100">
                                     {faq.answer}
                                 </div>
                             )}

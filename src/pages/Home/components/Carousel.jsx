@@ -53,8 +53,26 @@ export default function CarouselComponent() {
         loop={true}
         slidesPerView={1}
         spaceBetween={30}
-        
       >
+
+        {/* style for swiper */}
+
+
+        <style jsx>{`
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 26px;
+    color: red;
+  }
+`}</style>
+
+
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-16">
